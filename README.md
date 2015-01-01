@@ -4,7 +4,7 @@ KinectLinux
 We are going to install Libfreenect in order to stream real time depth video inside the Raspberry Pi.
 
 
-    Install Python-OpenCV and their dependencies:
+Install Python-OpenCV and their dependencies:
 
 First, update the package index:
 
@@ -18,13 +18,13 @@ Then, install OpenCV for Python and dependencies by typing the following command
 
     sudo apt-get install git-core git
 
-    Install dependencies for Libfreenect:
+Install dependencies for Libfreenect:
 
     sudo apt-get install freeglut3 freeglut3-dev libxmu-dev libxi-dev
 
     sudo apt-get install cmake cmake-curses-gui pkg-config
 
-    Install libusb 1.0.19:
+Install libusb 1.0.19:
 
 Now for libusb, the pre-compiled binary version 1.0.0 wont work with the Kinect. For that, you have to compile it and install it from source directly into your Raspberry Pi.
 
@@ -80,7 +80,7 @@ then enter the following command:
 
 Here you are done with installing libfreenect, so let test it.
 
-    Testing libfreenect with Python:
+Testing libfreenect with Python:
 
 change your current directory to libfreenect/wrappers/python:
 
