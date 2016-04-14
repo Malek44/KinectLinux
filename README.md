@@ -24,7 +24,7 @@ Install dependencies for Libfreenect:
 
     sudo apt-get install cmake cmake-curses-gui pkg-config
 
-Install libusb 1.0.19:
+Install libusb 1.0.20 (latest version):
 
 Now for libusb, the pre-compiled binary version 1.0.0 wont work with the Kinect. For that, you have to compile it and install it from source directly into your Raspberry Pi.
 
@@ -34,7 +34,7 @@ Install prerequisites:
 
 Get the libusb source from github:
 
-    sudo wget http://sourceforge.net/projects/libusb/files/libusb-1.0/libusb-1.0.19/libusb-1.0.19.tar.bz2/download
+    sudo wget http://sourceforge.net/projects/libusb/files/libusb-1.0/libusb-1.0.20/libusb-1.0.20.tar.bz2/download
 
 Decompress the content:
 
@@ -42,7 +42,7 @@ Decompress the content:
 
 Compile and install:
 
-    cd libusb-1.0.19
+    cd libusb-1.0.20
 
     ./configure
 
@@ -94,4 +94,6 @@ If everything is going ok you should now be able to test some demo applications:
 
     sudo python demo_cv_async.py
 
-As you may notice, the kinect pushes the Raspberry Pi to its limits. The frame rate is clearly slower than that of modern desktop computers. However, this is easily understood by the fact that the Raspberry Pi is a small computer intended for small tasks with its 700MHz single core processor and the 512MB of RAM.
+As you may notice, the kinect pushes the Raspberry Pi 1 and 2 to its limits. The frame rate is clearly slower than that of modern desktop computers. However, this is easily understood by the fact that the Raspberry Pi is a small computer intended for small tasks with its 700MHz single core processor and the 512MB of RAM.
+
+Using Raspberry Pi 3 Model B gives a much better frame rate, because it has 1GB RAM. The 64-bit Broadcom BCM2837 ARM v8 processor is a quad-core chip that runs at 1.2GHz, makes its performance comparable to an old desktop computer.
