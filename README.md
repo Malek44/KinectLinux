@@ -104,7 +104,7 @@ If everything is going ok you should now be able to test some demo applications:
 
 If your Kinect is unidentified or not found, check using "cheese" if it is working. If cheese works, and sudo python demo_cv_async.py does not, test this demo application instead:
 
-    sudo python demo_cv_sync.py
+    sudo python demo_cv2_sync.py
 
 As you may notice, the kinect pushes the Raspberry Pi 1 and 2 to its limits. The frame rate is clearly slower than that of modern desktop computers. However, this is easily understood by the fact that the Raspberry Pi is a small computer intended for small tasks with its 700MHz single core processor and the 512MB of RAM.
 
