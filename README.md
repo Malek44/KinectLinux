@@ -110,4 +110,4 @@ As you may notice, the kinect pushes the Raspberry Pi 1 and 2 to its limits. The
 
 Using Raspberry Pi 3 Model B gives a much better frame rate, because it has 1GB RAM. The 64-bit Broadcom BCM2837 ARM v8 processor is a quad-core chip that runs at 1.2GHz, makes its performance comparable to an old desktop computer.
 
-Always exit the program by Ctrl + C, otherwise the application would not have a clean exit and would need to be killed through the PID.
+Always exit the program by pressing Esc in the window, otherwise the application would not have a clean exit and would need to be killed through its PID.
