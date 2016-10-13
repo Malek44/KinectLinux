@@ -9,6 +9,14 @@ Install Python-OpenCV and their dependencies:
 First, update the package index:
 
     sudo apt-get update
+    
+It is also wise to upgrade the packages:
+    
+    sudo apt-get upgrade
+    
+If your linux distribution on Raspberry Pi is not the latest version, upgrade using:
+    
+    sudo apt-get dist-upgrade
 
 Then, install OpenCV for Python and dependencies by typing the following commands:
 
