@@ -9,6 +9,14 @@ Install Python-OpenCV and their dependencies:
 First, update the package index:
 
     sudo apt-get update
+    
+It is also wise to upgrade the packages:
+    
+    sudo apt-get upgrade
+    
+If your linux distribution on Raspberry Pi is not the latest version, upgrade using:
+    
+    sudo apt-get dist-upgrade
 
 Then, install OpenCV for Python and dependencies by typing the following commands:
 
@@ -50,7 +58,7 @@ Compile and install:
 
     sudo make install
 
-    Install Libfreenect:
+Install Libfreenect:
 
 Libfreenect is an opensource driver for Kinect on Linux machines. It interfaces to the Kinect and grab data from different sensors (IR images, RGB image, Depth Data). The source is available from github:
 
@@ -94,6 +102,12 @@ If everything is going ok you should now be able to test some demo applications:
 
     sudo python demo_cv_async.py
 
+If your Kinect is unidentified or not found, check using "cheese" if it is working. If cheese works, and sudo python demo_cv_async.py does not, test this demo application instead:
+
+    sudo python demo_cv_sync.py
+
 As you may notice, the kinect pushes the Raspberry Pi 1 and 2 to its limits. The frame rate is clearly slower than that of modern desktop computers. However, this is easily understood by the fact that the Raspberry Pi is a small computer intended for small tasks with its 700MHz single core processor and the 512MB of RAM.
 
 Using Raspberry Pi 3 Model B gives a much better frame rate, because it has 1GB RAM. The 64-bit Broadcom BCM2837 ARM v8 processor is a quad-core chip that runs at 1.2GHz, makes its performance comparable to an old desktop computer.
+
+Always exit the program by Ctrl + C, otherwise the application would not have a clean exit and would need to be killed through the PID.
